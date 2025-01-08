@@ -31,5 +31,5 @@ jobs:
                 host: ${{ secrets.REMOTE_HOST }}
                 username: ${{ secrets.REMOTE_USER }}
                 key: ${{ secrets.SSH_PRIVATE_KEY }}
-                script: | sudo mv /home/ubuntu/cometa.page/* /var/www/cometa.page/
-                          sudo systemctl reload nginx
+                script: sudo mv /home/ubuntu/cometa.page/* /var/www/cometa.page/
+                        sudo systemctl reload nginx
